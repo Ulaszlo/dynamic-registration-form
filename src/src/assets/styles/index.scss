@@ -1,0 +1,13 @@
+@import './reset';
+@import './fonts.scss';
+@import './global';
+
+.app {
+  font-family: var(--default-font);
+  height: 100vh;
+  font-size: 16px;
+  padding: 10px;
+  background-image: url('/assets/images/main_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
