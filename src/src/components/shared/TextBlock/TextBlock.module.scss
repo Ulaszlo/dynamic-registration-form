@@ -1,0 +1,22 @@
+.textBlock {
+  &_title {
+    margin: 25px 0;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 600;
+
+    &__primary {
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 21.6px;
+      font-weight: 600;
+    }
+  }
+
+  &_paragraph {
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}

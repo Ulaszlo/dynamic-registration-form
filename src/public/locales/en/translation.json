@@ -1,0 +1,49 @@
+{
+  "at": "Austria",
+  "by": "Belarus",
+  "be": "Belgium",
+  "bg": "Bulgaria",
+  "gb": "United Kingdom",
+  "hu": "Hungary",
+  "de": "Germany",
+  "il": "Israel",
+  "in": "India",
+  "es": "Spain",
+  "it": "Italy",
+  "ca": "Canada",
+  "cn": "China",
+  "lu": "Luxembourg",
+  "nl": "Netherlands",
+  "pl": "Poland",
+  "ru": "Russia",
+  "sa": "Saudi Arabia",
+  "rs": "Serbia",
+  "sk": "Slovakia",
+  "us": "United States of America",
+  "th": "Thailand",
+  "tr": "Turkey",
+  "ua": "Ukraine",
+  "fi": "Finland",
+  "fr": "France",
+  "hr": "Croatia",
+  "cz": "Czech Republic",
+  "ch": "Switzerland",
+  "se": "Sweden",
+  "ee": "Estonia",
+  "kr": "South Korea",
+  "jp": "Japan",
+  "none": "Not selected",
+  "Supplier": "Supplier",
+  "Manufacturer": "Manufacturer",
+  "Manufacturer and Supplier": "Manufacturer and Supplier",
+  "mainPage": {
+    "title": "Registration in the system"
+  },
+  "registration": {
+    "title": "User agreement",
+    "company": "Select the category of the registered company"
+  },
+  "policy": {
+    "checkboxLabel": "I accept the terms of the user agreement."
+  }
+}
