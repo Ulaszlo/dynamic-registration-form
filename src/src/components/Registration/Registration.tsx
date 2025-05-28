@@ -10,7 +10,6 @@ import { Button } from 'components/shared/Button';
 import { INFO_PAGE } from 'consts/consts';
 import { COMPANY_CATEGORY, COMPANY_CATEGORY_EN } from 'pages/MainPage/const';
 import { CompanyType } from 'types/forms';
-import { current } from '@reduxjs/toolkit';
 import styles from './Registration.module.scss';
 
 interface RegistrationProps {
