@@ -1,0 +1,67 @@
+.field {
+  position: relative;
+  padding-right: 16px;
+  width: 100%;
+
+  &:hover {
+    .errorIcon::after,
+    .errorIcon::before {
+      opacity: 1;
+    }
+
+    .errorIcon::before {
+      transform: translate(-50%, -76%) rotate(45deg) scale(1);
+    }
+  }
+}
+
+.input {
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+}
+
+.error {
+  border-color: var(--color-red-200) !important;
+}
+
+.errorIcon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  &::after,
+  &::before {
+    opacity: 0;
+    transition: all 0.1s linear;
+  }
+
+  &::after {
+    content: attr(data-after-text);
+    position: absolute;
+    top: -7px;
+    right: 0;
+    transform: translate(10px, -100%);
+    white-space: nowrap;
+    background-color: var(--color-red-200);
+    color: var(--color-white);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -76%) rotate(45deg) scale(0);
+    background-color: var(--color-red-200);
+    border-radius: 1px;
+  }
+}

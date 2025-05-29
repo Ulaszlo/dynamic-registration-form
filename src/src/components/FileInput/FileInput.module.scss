@@ -1,0 +1,47 @@
+.file {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.name {
+  width: 250px;
+  padding: 5px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  word-wrap: break-word;
+  min-width: 0;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.fileInput {
+  padding: 0;
+}
+
+.title {
+  background-color: var(--button-color);
+  color: var(--button-primary-text-color);
+  padding: 5px 22px;
+  border-radius: 6px;
+  transition: 0.3s;
+  white-space: nowrap;
+  display: block;
+
+  &:hover {
+    background-color: var(--button-primary-hover-color);
+  }
+}
+
+.error {
+  color: var(--color-red-200);
+  font-size: 14px;
+  display: block;
+  font-weight: 400;
+}

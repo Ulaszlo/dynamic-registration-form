@@ -40,7 +40,7 @@ export const Registration: FC<RegistrationProps> = ({ className }) => {
         disabled={!(companyType && companyType !== '-1' && isPolicyAgree)}
         onClick={() => navigate(INFO_PAGE)}
       >
-        Далее
+        {t('next')}
       </Button>
     </section>
   );

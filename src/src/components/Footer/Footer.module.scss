@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  padding: 11px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ebebeb;
+  border-radius: 16px;
+
+  &_actions {
+    display: flex;
+    gap: 16px;
+  }
+}

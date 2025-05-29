@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  border-radius: 7px;
+  position: relative;
+
+  &:focus-within {
+    border-color: var(--field-border-color-focus);
+  }
+}
+
+.label {
+  display: flex;
+  margin-bottom: 9px;
+  color: var(--color-blue-300);
+  font-size: 18px;
+}
+
+.label:hover {
+  cursor: pointer;
+}
+
+.input {
+  text-align: left;
+  width: 100%;
+  padding: 7px 7px 7px 20px;
+}
+
+.input[type='date']::-webkit-calendar-picker-indicator,
+.input[type='datetime-local']::-webkit-calendar-picker-indicator,
+.input[type='time']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 11px;
+}
+
+.input[type='datetime-local']::-webkit-calendar-picker-indicator,
+.input[type='date']::-webkit-calendar-picker-indicator {
+  background: url('/assets/images/calendar.svg') no-repeat center;
+}
+
+.clear {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+
+  &:focus {
+    outline: 1px solid #000;
+  }
+}
+
+.deleteValue {
+  cursor: pointer;
+}
+
+.input[type='checkbox'],
+input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.input[type='search'] {
+  appearance: textfield;
+  box-sizing: content-box;
+}
+
+.input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  appearance: none;
+}
+
+.input[type='password']::-ms-reveal,
+.input[type='password']::-ms-clear {
+  display: none;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  -webkit-text-fill-color: #000;
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: transparent !important;
+  color: #000 !important;
+  border-image-slice: 1;
+  box-shadow: 0 0 0 1px none inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
+}

@@ -1,0 +1,12 @@
+declare module '*.scss';
+declare module '*.svg';
+declare module '*.png';
+declare module '*.gif';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.tif';
+declare module '*.bmp';
+declare module '*.pdf';
+declare module '*.txt';
+declare module '*.csv';
+declare module 'react-tiff';

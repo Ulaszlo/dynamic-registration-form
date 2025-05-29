@@ -36,6 +36,14 @@
   "Supplier": "Supplier",
   "Manufacturer": "Manufacturer",
   "Manufacturer and Supplier": "Manufacturer and Supplier",
+  "next": "Next",
+  "addFile": "Attach a file",
+  "cancel": "Cancel",
+  "send": "Send",
+  "footerInfo": "Fields with asterisks (*) are required.",
+  "infoPage": {
+    "title": "Fill in the company information"
+  },
   "mainPage": {
     "title": "Registration in the system"
   },
@@ -45,5 +53,95 @@
   },
   "policy": {
     "checkboxLabel": "I accept the terms of the user agreement."
+  },
+  "staticForm": {
+    "title": "Company details*",
+    "companyName": "Company name",
+    "enterFullCompanyName": "Enter full company name",
+    "companyCountry": "Company country",
+    "selectCountry": "Select country",
+    "ownershipForm": "Ownership form",
+    "specifyOwnershipForm": "Specify ownership form",
+    "enterINN": "Enter TIN",
+    "enterKPP": "Enter TRC",
+    "OKPOCode": "OKPO code",
+    "enterOKPO": "Enter OKPO code",
+    "OKPFcode": "OKPF code",
+    "enterOKOPF": "Enter OKOPF",
+    "contactInformation": "Contact information",
+    "companyEmail": "Company email address",
+    "companyPhone": "Company phone",
+    "fax": "Fax",
+    "companyWebsite": "Company website",
+    "enterWebsiteAddress": "Enter website address"
+  },
+  "dynamicForms": {
+    "responsiblePersons": "Responsible for form filling*",
+    "additionalContacts": "Additional contacts",
+    "bankDetails": "Bank details*",
+    "legalDocuments": "Documents confirming legal status*",
+    "position": "Position*",
+    "fullName": "Full name*",
+    "phone": "Phone*",
+    "email": "Email*",
+    "bankName": "Bank name*",
+    "city": "City*",
+    "accountNumber": "Account number*",
+    "correspondentAccount": "Correspondent account*",
+    "bik": "BIC*",
+    "fileName": "File name*",
+    "file": "File*",
+    "placeholders": {
+      "position": "Enter position",
+      "fullName": "Enter full name",
+      "phone": "Enter phone number",
+      "email": "Enter email",
+      "bankName": "Enter bank name",
+      "city": "Enter city",
+      "accountNumber": "Enter account number",
+      "correspondentAccount": "Enter correspondent account",
+      "bik": "Enter BIC",
+      "file": "Select file"
+    }
+  },
+  "errors": {
+    "addDocument": "Error adding documents",
+    "removeDocument": "Error removing documents",
+    "removeAllDocuments": "Error removing all documents",
+    "updateDocument": "Error updating documents"
+  },
+  "validationErrors": {
+    "requiredField": "Required field",
+    "maxLength": "Maximum length: {{maxLength}} characters",
+    "minLength": "Minimum length: {{minLength}} characters",
+    "exactLength": "Allowed length: {{lengths}} characters",
+    "invalidPhone": "Enter valid phone number",
+    "invalidEmail": "Enter valid email",
+    "invalidValue": "Invalid value",
+    "fileRequired": "File is required",
+    "fileTooLarge": "Maximum file size exceeded: {{maxSize}}MB",
+    "invalidFileType": "Invalid file format. Allowed formats: {{types}}"
+  },
+  "common": {
+    "and": "and",
+    "or": "or"
+  },
+  "modal": {
+    "send": {
+      "message": "Submit registration form?",
+      "actionText": "Submit"
+    },
+    "close": {
+      "message": "Close the form? Entered data will not be saved.",
+      "actionText": "Close"
+    },
+    "success": {
+      "message": "The registration form has been successfully submitted for review. Further instructions and credentials will be sent to the email address of the responsible person.",
+      "actionText": "Return to homepage"
+    },
+    "error": {
+      "message": "An error occurred. Please try again later.",
+      "actionText": "Close"
+    }
   }
 }

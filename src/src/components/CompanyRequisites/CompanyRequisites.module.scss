@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px 8px 45px;
+  margin: 0 20px;
+}
+
+.form:nth-child(odd) {
+  background-color: #fff;
+}
+
+.form:nth-child(even) {
+  background-color: #ebeff2;
+}
+
+.form:nth-of-type(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.form:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0 0 16px 20px;
+}
+
+.row {
+  width: 75%;
+  max-width: 552px;
+}
+
+.name {
+  width: 25%;
+}
+
+.input {
+  background-color: var(--color-white);
+}

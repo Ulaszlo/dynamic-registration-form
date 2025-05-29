@@ -1,0 +1,61 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 6px 10px;
+  gap: 5px;
+
+  &:focus {
+    outline: 1px solid var(--color-black);
+  }
+
+  &:hover {
+    background-color: #395f7cbc;
+    color: var(--color-grey-100);
+    cursor: pointer;
+  }
+
+  &_disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: var(--color-grey-100);
+  }
+}
+
+.backlight {
+  background-color: var(--color-blue-300);
+  color: var(--color-grey-100);
+  border-radius: 4px;
+}
+
+.label {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secondary {
+  .checkedIcon {
+    display: none;
+  }
+}
+
+.flag {
+  padding: 5px;
+  justify-content: flex-start;
+
+  &.backlight {
+    background-color: var(--color-blue-50);
+    color: var(--color-black);
+    border-radius: 4px;
+  }
+
+  &:hover {
+    background-color: var(--color-grey-150);
+    color: var(--color-black);
+    cursor: pointer;
+  }
+}

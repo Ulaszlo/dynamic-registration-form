@@ -1,20 +1,32 @@
-export const MODAL_CONTENT = {
+import { TFunction } from 'i18next';
+
+export type ModalContentType = {
+  message: string;
+  actionText: string;
+};
+
+export type ModalContentDict = {
+  send: ModalContentType;
+  close: ModalContentType;
+  success: ModalContentType;
+  error: ModalContentType;
+};
+
+export const getModalContent = (t: TFunction): ModalContentDict => ({
   send: {
-    message: 'Отправить форму регистрации в ГК Росатом?',
-    actionText: 'Отправить'
+    message: t('modal.send.message'),
+    actionText: t('modal.send.actionText')
   },
   close: {
-    message: 'Закрыть форму? Внесенные данные не будут сохранены.',
-    actionText: 'Закрыть'
+    message: t('modal.close.message'),
+    actionText: t('modal.close.actionText')
   },
   success: {
-    message: `Форма регистрации была успешно отправлена на рассмотрение.
-      Дальнейшие инструкции и учётные данные будут отправлены
-      на указанный адрес электронной почты ответственного за заполнение.`,
-    actionText: 'Вернуться на стартовую страницу'
+    message: t('modal.success.message'),
+    actionText: t('modal.success.actionText')
   },
   error: {
-    message: 'Произошла ошибка. Попробуйте позднее.',
-    actionText: 'Закрыть'
+    message: t('modal.error.message'),
+    actionText: t('modal.error.actionText')
   }
-};
+});

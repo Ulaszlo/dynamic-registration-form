@@ -1,0 +1,1 @@
+export { CompanyRequisites } from './CompanyRequisites';
