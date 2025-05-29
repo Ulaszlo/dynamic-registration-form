@@ -63,7 +63,6 @@ export const formSend = async (
     });
   };
 
-  // Преобразуем файлы в объекты с метаданными
   const documents = await Promise.all(
     documentsForm
       .map(async (document) => {
@@ -89,7 +88,7 @@ export const formSend = async (
   try {
     await $api.post('/', requestData, {
       headers: {
-        'Content-Type': 'application/json' // Указываем, что отправляем JSON
+        'Content-Type': 'application/json'
       }
     });
     return true;

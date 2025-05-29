@@ -15,13 +15,13 @@ export const TextBlock: FC<TextBlockProps> = ({ className, text = [] }) => {
         text.map((textItem) => (
           <div key={textItem.title} className={styles.textBlock_item}>
             {textItem.title && (
-              <h4
+              <h3
                 className={classNames(styles.textBlock_title, {
                   [styles.textBlock_title__primary]: !!textItem.isPrimaryTitle
                 })}
               >
                 {textItem.title}
-              </h4>
+              </h3>
             )}
             {Array.isArray(textItem.paragraphs)
               ? textItem.paragraphs.map((paragraph) => (

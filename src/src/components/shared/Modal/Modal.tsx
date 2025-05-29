@@ -8,6 +8,12 @@ import styles from './Modal.module.scss';
 
 type ModalType = 'send' | 'close' | 'success' | 'error';
 
+export interface ModalControl {
+  isOpen: boolean;
+  type: ModalType;
+  isLoading: boolean;
+}
+
 interface ModalProps {
   className?: string;
   isOpen: boolean;

@@ -7,7 +7,7 @@ export const MainPage = () => {
   const { t } = useTranslation();
   return (
     <main className={styles.wrapper}>
-      <span className={styles.title}>{t('mainPage.title')}</span>
+      <h1 className={styles.title}>{t('mainPage.title')}</h1>
       <div className={styles.container}>
         <Registration />
         <Info />

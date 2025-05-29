@@ -28,7 +28,7 @@ export const Registration: FC<RegistrationProps> = ({ className }) => {
 
   return (
     <section className={classNames(styles.registration, {}, [className])}>
-      <p className={styles.registration_text}>{t('registration.company')}</p>
+      <h2 className={styles.registration_text}>{t('registration.company')}</h2>
       <Select
         options={currentOptions}
         // TODO переписать CompanyType на enum и избавится от as
