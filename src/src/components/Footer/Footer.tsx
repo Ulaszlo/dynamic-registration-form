@@ -14,7 +14,7 @@ export const Footer: FC<FooterProps> = ({ className, cancel, send }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={classNames(styles.footer, {}, [className])}>
+    <footer className={classNames(styles.footer, {}, [className])}>
       <p>{t('footerInfo')}</p>
       <div className={styles.footer_actions}>
         <Button className={styles.cancel} theme="secondary" onClick={cancel}>
@@ -24,6 +24,6 @@ export const Footer: FC<FooterProps> = ({ className, cancel, send }) => {
           {t('send')}
         </Button>
       </div>
-    </div>
+    </footer>
   );
 };

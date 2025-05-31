@@ -33,6 +33,8 @@ export const FormInputField: FC<FormInputFieldProps> = ({
   const debouncedValue = useDebounce(inputValue, 500);
   const [maxLength, setMaxLength] = useState<number>();
 
+  // TODO need refact
+
   useEffect(() => {
     if (validationScheme?.maxLength) {
       setMaxLength(validationScheme.maxLength);
